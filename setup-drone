@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cd /drone/src/ || exit
+cd /vol/harness || exit
 
 # Anykernel3
 git clone https://github.com/UtsavBalar1231/Anykernel3 --depth=1 -b kona anykernel
