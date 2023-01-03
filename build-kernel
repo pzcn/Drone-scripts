@@ -17,9 +17,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cd /drone/src/ || exit
+cd /vol/harness || exit
 
-HOME="/drone/src"
+HOME="/vol/harness"
 
 if [[ "$@" =~ "gcc"* ]]; then
     KBUILD_COMPILER_STRING=$(${HOME}/gcc64/bin/aarch64-elf-gcc --version | head -n1 | sed -e 's/aarch64-elf-gcc\ //' | perl -pe 's/\(//gs' | perl -pe 's/\)//gs')
